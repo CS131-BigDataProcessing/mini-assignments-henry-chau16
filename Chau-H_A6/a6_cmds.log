@@ -1,0 +1,419 @@
+    1  passwd
+    2  ls
+    3  help
+    4  vim
+    5  vi text.txt
+    6  ls
+    7  rn text.txt test.txt
+    8  help
+    9  mv text.txt test.txt
+   10  ls
+   11  echo
+   12  echo test.txt
+   13  cat test.txt
+   14  git clone https://github.com/CS131-BigDataProcessing/CS131_fa24_datafiles.git
+   15  ls
+   16  cd CS131_fa24_datafiles/
+   17  ls
+   18  cd Lec02/
+   19  cd
+   20  ls
+   21  CS131_fa24_datafiles/
+   22  cd CS131_fa24_datafiles/
+   23  ls
+   24  cd Lec02/
+   25  ls
+   26  cat goodluck.txt 
+   27  grep ^wor goodluck.txt > answers.txt
+   28  ls
+   29  cat answers.txt
+   30  cat answers.txt 
+   31  cat goodluck.txt 
+   32  clear
+   33  ls
+   34  grep ^wor goodluck.txt 
+   35  egrep ^wor goodluck.txt 
+   36  grep -w ^wor goodluck.txt 
+   37  grep -w world goodluck.txt 
+   38  grep -w ^wor* goodluck.txt 
+   39  grep -w wor goodluck.txt 
+   40  grep wor goodluck.txt 
+   41  grep -o wor goodluck.txt 
+   42  grep -o to goodluck.txt 
+   43  grep -w to goodluck.txt 
+   44  grep -w *to goodluck.txt 
+   45  grep -w '*to' goodluck.txt 
+   46  grep -e '.*to' goodluck.txt 
+   47  grep -e '*to' goodluck.txt 
+   48  grep -e '/*to' goodluck.txt 
+   49  grep -e '/*to' goodluck.txt >> answers.txt 
+   50  cat answers.txt 
+   51  grep -eo '/*to' goodluck.txt > answers.txt 
+   52  grep --eo '/*to' goodluck.txt > answers.txt 
+   53  grep -e -o '/*to' goodluck.txt > answers.txt 
+   54  grep -o '/*to' goodluck.txt > answers.txt 
+   55  cat answers.txt 
+   56  grep -o '/*wor' goodluck.txt > answers.txt 
+   57  cat answers.txt 
+   58  echo hello
+   59  echo find all words starting with 'wor' > answers.txt 
+   60  cat answers.txt 
+   61  grep -o '/*wor' goodluck.txt >> answers.txt 
+   62  cat answers.txt 
+   63  echo find all words starting with 'wor' > answers.txt 
+   64  cat answers.txt 
+   65  grep -w wor goodluck.txt >> answers.txt 
+   66  cat answers.txt 
+   67  grep -w 'wor*' goodluck.txt >> answers.txt 
+   68  cat answers.txt 
+   69  grep -w wor goodluck.txt
+   70  grep wor goodluck.txt 
+   71  grep -w 'wor.*'  goodluck.txt 
+   72  grep -w 'wor/*'  goodluck.txt 
+   73  grep -w 'wor/* '  goodluck.txt 
+   74  grep -w 'wor.* '  goodluck.txt 
+   75  grep -w 'wor.*\h'  goodluck.txt 
+   76  grep -w 'wor.*\s'  goodluck.txt 
+   77  grep 'wor.*\s'  goodluck.txt 
+   78  grep 'wor.\s'  goodluck.txt 
+   79  grep 'wor*\s'  goodluck.txt 
+   80  grep -e '\bwor*\s'  goodluck.txt 
+   81  grep -e '\bwor'  goodluck.txt 
+   82  grep -w '\bwor'  goodluck.txt 
+   83  grep -ew '\bwor'  goodluck.txt 
+   84  grep -e-w '\bwor'  goodluck.txt 
+   85  grep -w wor*  goodluck.txt 
+   86  grep -w wor.*  goodluck.txt 
+   87  grep -w wor.*\s  goodluck.txt 
+   88  ls
+   89  cd CS131_fa24_datafiles/
+   90  ls
+   91  cd Lec02
+   92  ls
+   93  cat answers
+   94  cat answers.txt 
+   95  egrep -w '\swor*\s' goodluck.txt 
+   96  egrep -w wor goodluck.txt 
+   97  cat goodluck.txt 
+   98  egrep 'wor' goodluck.txt 
+   99  egrep 'wor??' goodluck.txt 
+  100  grep -w '\swor' goodluck.txt 
+  101  grep -w 'wor' goodluck.txt 
+  102  grep -w wor goodluck.txt 
+  103  grep wor goodluck.txt 
+  104  grep -e wor goodluck.txt 
+  105  grep -e 'wor' goodluck.txt 
+  106  grep -e '\swor' goodluck.txt 
+  107  grep -e '\swor*\s' goodluck.txt 
+  108  grep -e '\swor.\s' goodluck.txt 
+  109  grep -e '\swor*' goodluck.txt 
+  110  cd
+  111  ls
+  112  cd CS
+  113  cd CS131_fa24_datafiles/
+  114  cd Lec02/
+  115  ls
+  116  grep "wor*\s" goodluck.txt 
+  117  grep "wor*" goodluck.txt 
+  118  grep "wor.*\s" goodluck.txt 
+  119  grep "wor\w*\s" goodluck.txt 
+  120  grep wor\w*\s goodluck.txt 
+  121  echo "grep 'wor\w*\s' goodluck.txt" >> answers.txt 
+  122  cat answers.txt 
+  123  grep "wor\w*\s" goodluck.txt >> answers.txt 
+  124  cat answers.txt 
+  125  echo "find all words starting with 'wor'" > answers.txt 
+  126  cat answers.txt 
+  127  grep -w "wor\w*\s" goodluck.txt 
+  128  echo "grep -w 'wor\w*\s' goodluck.txt"
+  129  grep -w "\swor\w*\s" goodluck.txt 
+  130  grep -o "\swor\w*\s" goodluck.txt 
+  131  echo "grep -o '\swor\w*\s' goodluck.txt" >> answers.txt 
+  132  cat answers.txt 
+  133  grep -o "\swor\w*\s" goodluck.txt >> answers.txt 
+  134  cat answers.txt 
+  135  echo "find all words that have 'dred' in it" >> answers.txt 
+  136  grep -o "\s\w*dred\w*\s" goodluck.txt 
+  137  echo "grep -o '\s\w*dred\w*\s' goodluck.txt" >> answers.txt 
+  138  grep -o "\s\w*dred\w*\s" goodluck.txt >> answers.txt 
+  139  cat answers.txt 
+  140  cd
+  141  git clone https://github.com/CS131-BigDataProcessing/mini-assignments-henry-chau16.git
+  142  ls
+  143  cd CS131_fa24_datafiles/Lec02/
+  144  ls
+  145  cat answers.txt 
+  146  echo "grep for only the lines 'Good luck, babe'" >> answers.txt 
+  147  cat goodluck.txt 
+  148  grep -o '\sGood luck, babe\s' goodluck.txt 
+  149  grep -o 'Good luck, babe' goodluck.txt 
+  150  grep 'Good luck, babe' goodluck.txt 
+  151  grep 'Good luck, babe\s' goodluck.txt 
+  152  grep 'Good luck, babe' goodluck.txt 
+  153  echo "grep -o 'Good luck, babe' goodluck.txt" >> answers.txt 
+  154  cat answers.txt 
+  155  grep -o "Good luck, babe" goodluck.txt  >> answers.txt 
+  156  cat answers.txt 
+  157  echo "find the line counts and word counts (using wc) in step 3" >> answers.txt 
+  158  wc goodluck.txt 
+  159  wc -l answers.txt 
+  160  wc -l -w goodluck.txt 
+  161  grep -o "Good luck, babe" goodluck.txt | wc -l -w
+  162  echo "grep -o "Good luck, babe" goodluck.txt | wc -l -w" >> answers.txt 
+  163  cat answers.txt 
+  164  grep -o "Good luck, babe" goodluck.txt | wc -l -w >> answers.txt 
+  165  cat answers.txt 
+  166  mv answers.txt Chau-H_a2_counts.txt
+  167  ls
+  168  cd
+  169  cd mini-assignments-henry-chau16/
+  170  ls
+  171  mkdir Chau-H_A2
+  172  ls
+  173  cd
+  174  cd CS131_fa24_datafiles/Lec02/
+  175  mv Chau-H_a2_counts.txt .
+  176  mv Chau-H_a2_counts.txt ~/Chau-H_a2_counts.txt
+  177  cd
+  178  ls
+  179  mv Chau-H_a2_counts.txt mini-assignments-henry-chau16/Chau-H_A2/Chau-H_a2_counts.txt
+  180  cd
+  181  ls -a
+  182  cat .bash_profile 
+  183  cat .bashrc
+  184  vi .bashrc
+  185  cd
+  186  ls
+  187  vi .bashrc
+  188  vi -r .bashrc
+  189  cat .bashrc
+  190  source ~/.bashrc
+  191  lsa
+  192  cd CS131_fa24_datafiles/
+  193  git pull
+  194  ls 
+  195  cd Lec06
+  196  ls
+  197  cat sample_startup_code.txt 
+  198  cd
+  199  cd CS131_fa24_datafiles/Lec02
+  200  ls -l /var/log
+  201  history > Chau-H_a2_cmds.log
+  202  cat Chau-H_a2_cmds.log 
+  203  mv Chau-H_a2_cmds.log ~/mini-assignments-henry-chau16/Chau-H_A2/Chau-H_a2_cmds.log
+  204  cd
+  205  cd mini-assignments-henry-chau16/
+  206  cd Chau-H_A2/
+  207  ls
+  208  cd
+  209  cd mini-assignments-henry-chau16/
+  210  git pull
+  211  git push
+  212  git remote -v
+  213  git remote set-url origin git@github.com:henry-chau16/mini-assignments-henry-chau16.git
+  214  git status
+  215  ls
+  216  git push
+  217  git status
+  218  git push
+  219  git add .
+  220  git push
+  221  cldar
+  222  clear
+  223  git phs
+  224  git push
+  225  git pull
+  226  git push
+  227  ls
+  228  cd mini-assignments-henry-chau16/
+  229  ls
+  230  cd
+  231  cd mini-assignments-henry-chau16/Chau-H_A2/
+  232  ls
+  233  mv Chau-H_a2_cmds.log ~/Chau-H_a2_cmds.log
+  234  mv Chau-H_a2_counts.txt ~/Chau-H_a2_counts.txt
+  235  cd
+  236  ls
+  237  rmdir mini-assignments-henry-chau16/
+  238  rm -r mini-assignments-henry-chau16/
+  239  rm -rf mini-assignments-henry-chau16/
+  240  ls
+  241  git clone https://github.com/henry-chau16/mini-assignments-henry-chau16.git
+  242  ls
+  243  cd mini-assignments-henry-chau16/
+  244  git remote -v
+  245  git remote set-url origin git@github.com:henry-chau16/mini-assignments-henry-chau16.git
+  246  mkdir Chau-H_A2
+  247  ls
+  248  cd
+  249  mv Chau-H_a2_cmds.log ~/mini-assignments-henry-chau16/Chau-H_A2/Chau-H_a2_cmds.log
+  250  mv Chau-H_a2_counts.txt ~/mini-assignments-henry-chau16/Chau-H_A2/Chau-H_a2_counts.txt
+  251  cd mini-assignments-henry-chau16/
+  252  ls
+  253  cd Chau-H_A2/
+  254  ls
+  255  cd ..
+  256  git status
+  257  git add .
+  258  git status
+  259  git commit -m "submitting A2"
+  260  git status
+  261  git commit
+  262  git config --global user.email "nguyen.chau1662@gmail.com"
+  263  git config --global user.name "henry-chau16"
+  264  git commit -m "submitting A2"
+  265  git push
+  266  ls
+  267  cd mini-assignments-henry-chau16/
+  268  ls
+  269  mkdir Chau-H_A4
+  270  ls
+  271  cd Chau-H_A4
+  272  who
+  273  date
+  274  $HOME
+  275  $USER
+  276  echo $USER
+  277  echo $HOME
+  278  vim echoing.sh
+  279  cat echoing.sh 
+  280  sh echoing.sh 
+  281  vim echoing.sh 
+  282  sh echoing.sh 
+  283  vim activity2.sh
+  284  sh activity2.sh "Henry" 50
+  285  vim activity3.sh
+  286  sh activity3.sh
+  287  vim activity3.sh
+  288  sh activity3.sh
+  289  vim activity4.sh
+  290  sh activity4.sh 
+  291  ls
+  292  mv echoing.sh activity1.sh
+  293  ls
+  294  vim echoing.sh
+  295  sh echoing.sh 
+  296  vim echo
+  297  ls
+  298  vim echoing.sh 
+  299  sh echoing.sh 
+  300  ls
+  301  sh echoing.sh 
+  302  vim echoing.sh 
+  303  sh echoing.sh 
+  304  cd
+  305  cd mini-assignments-henry-chau16/
+  306  git status
+  307  git add .
+  308  git commit
+  309  git status
+  310  git push
+  311  cd mini-assignments-henry-chau16/
+  312  ls
+  313  mkdir Chau_H_A5
+  314  rm Chau_H_A5/
+  315  rm -r Chau_H_A5/
+  316  ls
+  317  mkdir Chau-H_A5
+  318  ls
+  319  cd Chau-H_A5
+  320  vim age.sh
+  321  sh age.sh 5
+  322  vim age.sh 
+  323  sh age.sh 5
+  324  vim age.sh
+  325  sh age.sh 5
+  326  vim temperature.sh
+  327  sh temperature.sh 62
+  328  ls
+  329  cd mini-assignments-henry-chau16/
+  330  cd Chau-H_A5
+  331  ls
+  332  cat age.sh 
+  333  vim age.sh 
+  334  vim temperature.sh 
+  335  vim test.sh
+  336  sh test.sh 
+  337  vim test.sh
+  338  sh test.sh 
+  339  cd
+  340  ls
+  341  cd CS131_fa24_datafiles/
+  342  git pull
+  343  ls
+  344  cd Lec08
+  345  ls
+  346  cat airline_stats.csv 
+  347  ls
+  348  cd mini-assignments-henry-chau16/
+  349  git status
+  350  git pull
+  351  cd 
+  352  cd CS131_fa24_datafiles/
+  353  git pull
+  354  ls
+  355  cd Lec08
+  356  ls
+  357  mv airline_stats.csv ~/airline_stats.csv
+  358  cd
+  359  ls
+  360  cd mini-assignments-henry-chau16/
+  361  ls
+  362  mkdir Chau-H_A6
+  363  cd
+  364  mv airline_stats.csv ~/mini-assignments-henry-chau16/Chau-H_A6
+  365  cd mini-assignments-henry-chau16/Chau-H_A6
+  366  ls
+  367  head airline_stats.csv 
+  368  awk -F, '{print $4}' airline_stats.csv 
+  369  awk -F, '!seen[$4] {print $4}' airline_stats.csv 
+  370  awk -F, '!seen[$4]' airline_stats.csv 
+  371  awk -F, 'seen[$4]' airline_stats.csv 
+  372  ls
+  373  cd mini-assignments-henry-chau16/Chau-H_A6
+  374  ls
+  375  awk -F, "{print $4}" airline_stats.csv 
+  376  awk -F, '{print $4}' airline_stats.csv 
+  377  echo 1. awk -F, '{print $4}' airline_stats.csv > airline_inquiry.txt
+  378  cat airline_inquiry.txt 
+  379  awk -F, '{print $4}' airline_stats.csv >> airline_inquiry.txt 
+  380  awk -F, '$1 > 10 {print $4}' airline_stats.csv | sort
+  381  echo 2a. awk -F, '$1 > 10 {print $4}' airline_stats.csv | sort
+  382  echo "2a. awk -F, '$1 > 10 {print $4}' airline_stats.csv | sort" >> airline_inquiry.txt
+  383  clear
+  384  cat airline_inquiry.txt 
+  385  vim airline_inquiry.txt 
+  386  ls
+  387  cd mini-assignments-henry-chau16/Chau-H_A6
+  388  ls
+  389  echo "1. awk -F, '{print $4}' airline_stats.csv > airline_inquiry.txt"
+  390  echo "1. awk -F, '{print $4}' airline_stats.csv" > airline_inquiry.txt
+  391  cat airline_inquiry.txt 
+  392  echo "2a. awk -F, '$1 > 10 {print $4}' airline_stats.csv | sort" >> airline_inquiry.txt
+  393  cat airline_inquiry.txt 
+  394  Threshold=15
+  395  echo $Threshold
+  396  awk -v -F, '{ if ($1 > Threshold) print $4}' airline_stats.csv 
+  397  awk -vF, '{ if ($1 > Threshold) print $4}' airline_stats.csv 
+  398  awk -vF=, '{ if ($1 > Threshold) print $4}' airline_stats.csv 
+  399  awk -vF, '{ if ($1 > Threshold) print $4}' airline_stats.csv 
+  400  awk -v-F, '{ if ($1 > Threshold) print $4}' airline_stats.csv 
+  401  awk -F, '$1 > 10 {print $4}' airline_stats.csv | sort
+  402  awk -v t=$Threshold  -F, '{ if ($1 > t) print $4}' airline_stats.csv 
+  403  awk -v t=$Threshold  -F, '{ if ($1 > t) print $4}' airline_stats.csv echo "2b. Threshold=15
+"
+  404  echo "2b. Threshold=15" >> airline_inquiry.txt 
+  405  echo "awk -v t=$Threshold  -F, '{ if ($1 > t) print $4}' airline_stats.csv" >> airline_inquiry.txt 
+  406  cat airline_inquiry.txt 
+  407  echo "Output: " >> airline_inquiry.txt 
+  408  echo "1: " >> airline_inquiry.txt 
+  409  cat airline_inquiry.txt 
+  410  vim airline_inquiry.txt 
+  411  cat airline_inquiry.txt 
+  412  awk -F, '{print $4}' airline_stats.csv  >> airline_inquiry.txt 
+  413  echo "2a: " >> airline_inquiry.txt 
+  414  awk -F, '$1 > 10 {print $4}' airline_stats.csv | sort >> airline_inquiry.txt 
+  415  echo "3: " >> airline_inquiry.txt 
+  416  awk -v t=$Threshold -F, '{ if ($1 > t) print $4}' airline_stats.csv >> airline_inquiry.txt 
+  417  vim airline_inquiry.txt 
+  418  history > a6_cmds.log
