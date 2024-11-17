@@ -1,0 +1,11 @@
+Members:
+Henry Chau
+Ryan Fernald
+Syed Hasan Abidi
+
+
+1. Missing values: we decided to remove the rows with missing values as it could skew any potential analysis in the future. While this does reduce the sample size of the data, we decided that this was a sufficiently large dataset and removing missing values would not cause too many issues.
+
+2. Duplicates: we removed all the duplicate entries based on the unique listing id (first column) as to preserve the data integrity
+
+3. Outliers: focusing on the price column, we decided that removing the outliers outright would unnecessarily destroy potentially valid data, and even potentially skew future analysis. Instead we saved the outliers to a separate file (outliers.csv) and removed them from the output file (file name specified as a parameter to the shell script).
