@@ -4,8 +4,22 @@
 file=$1
 output=$2
 
+fields=(2 4 11 12 13 14 15 16)
+
 #prints all the lines with missing values
 awk -F, 'NF < 16 {print "Line ", NR, ": ", $0}' "$file"
+
+#replaces missing values with "-" in non-critical columns
+awk -F, '{print $0}' "$file" > "$output"
+
+for field in ${fields[@]}; do
+	awk -F, -v f="$field" '{
+		if ($f == "") {
+			$f = "N\/A"
+		}
+		print $0
+	}' OFS=, "$output" > temp.csv && mv temp.csv "$output"
+done
 
 #removes row if any field is missing
 awk -F, '{
@@ -19,7 +33,7 @@ awk -F, '{
 	if (missing == "false") {
 		print $0
 	}
-}' "$file" > "$output"
+}' "$output" > temp.csv && mv temp.csv  "$output"
 
 #removes any duplicate rows
 sort -t, -k1 "$output" | uniq > temp.csv && mv temp.csv "$output"

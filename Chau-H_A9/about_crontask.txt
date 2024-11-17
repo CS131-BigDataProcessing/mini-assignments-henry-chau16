@@ -1,0 +1,5 @@
+Questions:
+
+a. Cron tasks are also useful with routinely clearing caches or log files, as well as scheduling maintenance for database or server systems.
+
+b. Some potential risks involved with poorly managed task scheduling include unwanted/accidental deletion of important files. To avoid this, any scheduled clearing or deletion should be as precise and specific as possible regarding paths and conditions, to ensure that only intended files are deleted/cleared.

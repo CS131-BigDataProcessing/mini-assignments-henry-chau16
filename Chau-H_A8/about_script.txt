@@ -4,7 +4,7 @@ Ryan Fernald
 Syed Hasan Abidi
 
 
-1. Missing values: we decided to remove the rows with missing values as it could skew any potential analysis in the future. While this does reduce the sample size of the data, we decided that this was a sufficiently large dataset and removing missing values would not cause too many issues.
+1. Missing values: we decided to remove the rows with missing values in columns we deemed critical to the integrity of the data set, as they could skew any potential analysis in the future. While this does reduce the sample size of the data, we decided that this was a sufficiently large dataset and removing missing values would not cause too many issues. To accomplish this, we first changed missing values to "N/A" for the other non-critical columns. We then check for any remaining missing values for any rows in an awk loop and removed those rows outright.
 
 2. Duplicates: we removed all the duplicate entries based on the unique listing id (first column) as to preserve the data integrity
 

@@ -5,13 +5,12 @@ Files:
 AB_NYC_2019.csv - csv file containing 2019 NYC AirBnB dataset
 
 preprocessing.sh - shell script that automates 3 data cleaning tasks (only compatible with files with the same schema as that of the listed csv file above):
-    
-    1. Prints out each row with any missing values; removes rows with any missing values and saves output to user specified output file
+
+    1. Prints out each row with any missing values; changes all missing values of non critical rows (listing name, host name, minimum nights, # of reviews, last review date, reviews per month, listing per host, days available) to "N/A"; removes rows with any missing values (any remaining missing values would only be from the critical column fields) and saves output to user specified output file
 
     2. Removes any duplicate entries evaluated by listing id (first column)
 
     3. Detects outliers of the price (10th) column based on a threshold of 2 x the mean price of the dataset. Removes outliers from the ouput file and saves outlier lines with line numbers to a separate file (outliers.csv)
-
 
 Calling preprocessing.sh:
 
